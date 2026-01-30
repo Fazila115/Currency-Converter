@@ -18,15 +18,6 @@ It allows users to convert currencies in real-time using an external exchange ra
 # Exchange Rate API –
 https://latest.currency-api.pages.dev
 
-# Project Structure
-Currency-Converter/
-│
-├── index.html
-├── style.css
-├── script.js
-├── code.js (country list file)
-└── README.md
-
 # How It Works
 - User enters an amount.
 - Selects "From" and "To" currencies.
