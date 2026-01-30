@@ -2,11 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Currency Converter</title>
 </head>
 <body>
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+
+            <div>
+                <p>Enter Amount</p>
+                <input value ='100' type="text">
+            </div>
+
+            <div>
+                <div class="dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <div class="select-container">
+                            <select name="from">
+                                <option value="USD">USD</option>
+                                <option value="PKR">PKR</option>
+                                <option value="EUR">EUR</option>
+                                <option value="AUD">AUD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <i class="fas fa-exchange"></i>
+                    
+                    <div class="to">
+                        <p>To</p>
+                        <img src="https://flagsapi.com/PK/flat/64.png">
+                        <div class="select-container">
+                            <select name="from">
+                                <option value="USD">USD</option>
+                                <option value="PKR" selected>PKR</option>
+                                <option value="EUR">EUR</option>
+                                <option value="AUD">AUD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">1 USD = 100 PKR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
     
     <script src="script.js"></script>
 </body>
